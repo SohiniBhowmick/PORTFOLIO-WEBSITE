@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+.portfolio-container{
+    display:flex;
+    min-height:10vh;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+    background:black;
+    height:10vh;
+    
+
+}
+
+.portfolio-container a{
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size: 80px;
+    color:white;
+
+}
+.main-content{
+    display:flex; /*this aligns children horizontally */
+    width:100%;
+    height:50vh;
+    
+}
+
+.left-container{
+    background: beige;
+    width:70%;
+    height:100vh;
+    display:flex;
+    /*change 'center' to 'flex-start' to move it left*/
+    justify-content:center; /*centers horizontally*/
+    align-items:center;
+    /* increase padding-left to give it breathing room from the edge*/
+    padding-left:10px;
+    flex-direction:row;/*this keeps icons and text side-by-side */
+    gap:50px;/*this creates space between your icons and text */
+
+}
+.right-container{
+    background:blue;
+    width:30%;
+    height:100vh;
+    display:flex;
+    justify-content:center; /*centers vertially*/
+    align-items:center;
+}
+.icons .fa-brands{
+    color:grey;
+    font-size:100px;
+    cursor:pointer;
+}
+.icons{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+}
+/* target the heading(Hi I am...)*/
+.content h2{
+    font-size: 130px;
+    margin-bottom:40px;
+    color:darkblue;
+}
+
+.content h1{
+    font-size: 200px;
+    color:green;
+    margin-bottom:50px;
+}
+.content p{
+    font-size: 80px;
+    line-height:1.6;
+    color:darkblue;
+    margin-bottom:20px;
+}
+.btn{
+    padding:12px 25px;
+    font-size: 70px;
+    margin-right:50px;
+    background:darkblue;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+}
+.design .circle{
+    aspect-ratio:1;
+    position:absolute;
+    border-radius:50%;
+    top:50%;
+    left:70%;
+    transform:translate(-50%,-50%);
+
+}
+.circle:nth-child(1){
+    background:darkblue;
+    width:80rem;
+}
+.circle:nth-child(2){
+    background:white;
+    width:75rem;
+    background-image:url("image/WhatsApp\ Image\ 2026-03-16\ at\ 19.50.29.jpeg");
+    background-size:80%;
+}
